@@ -1,0 +1,6 @@
+.dataTableHeader {
+	-fx-font-size: 16px;
+	-fx-font-weight: bold;
+	-fx-valignment: center;
+	-fx-alignment: center;
+}
