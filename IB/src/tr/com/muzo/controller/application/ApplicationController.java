@@ -30,8 +30,5 @@ public class ApplicationController implements Serializable{
 	public ObservableList<EvetHayirEnum> getEvetHayirList() {
 		return evetHayirList;
 	}
-	
-	
-	
-	
+
 }

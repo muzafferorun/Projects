@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>IB</groupId>
-	<artifactId>IB</artifactId>
+	<groupId>EGYS</groupId>
+	<artifactId>EGYS</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
@@ -25,15 +25,17 @@
 			</plugin>
 		</plugins>
 	</build>
-	
 	<repositories>
 		<repository>
 			<id>atlassian</id>
 			<name>atlassian</name>
 			<url>https://maven.atlassian.com/3rdparty/</url>
 		</repository>
+		<repository>
+			<id>com.teamdev</id>
+			<url>http://maven.teamdev.com/repository/products</url>
+		</repository>
 	</repositories>
-
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter -->
 		<dependency>
@@ -86,9 +88,9 @@
 
 		<!-- https://mvnrepository.com/artifact/com.oracle/ojdbc6 -->
 		<dependency>
-		    <groupId>com.oracle</groupId>
-		    <artifactId>ojdbc6</artifactId>
-		    <version>12.1.0.1-atlassian-hosted</version>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc6</artifactId>
+			<version>12.1.0.1-atlassian-hosted</version>
 		</dependency>
 
 
@@ -104,6 +106,19 @@
 			<groupId>commons-beanutils</groupId>
 			<artifactId>commons-beanutils</artifactId>
 			<version>1.9.3</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>1.8.10</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.teamdev.jxbrowser</groupId>
+			<artifactId>jxbrowser-win</artifactId>
+			<version>6.0</version>
 		</dependency>
 	</dependencies>
 
